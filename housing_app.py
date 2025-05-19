@@ -38,5 +38,5 @@ if st.button("Predict"):
     prediction = model.predict([input_data])
     st.success(f"Estimated House Price: ${prediction[0]*1000:.2f}")
     import joblib
-joblib.dump(rf_model, "house_model.pkl")
+joblib.dump(model, "house_model.pkl")
 
